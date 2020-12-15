@@ -8,7 +8,7 @@ class Timeline extends Component {
 
      return (
 
-        <li class = {`${this.props.myclass}`}>
+        <li className = {`${this.props.myclass}`}>
         <div className="timeline-image"><img className="rounded-circle img-fluid" src={this.props.image}  alt="" /></div>
         <div className="timeline-panel">
             <div className="timeline-heading">

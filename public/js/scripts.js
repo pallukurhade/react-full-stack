@@ -42,11 +42,14 @@
     });
 
     // Collapse Navbar
-    var navbarCollapse = function () {
+    var navbarCollapse = function() {
+        var mainNav = $('#mainNav');
+        if (mainNav.length) {
         if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
+        $("#mainNav").addClass("navbar-shrink");
         } else {
-            $("#mainNav").removeClass("navbar-shrink");
+        $("#mainNav").removeClass("navbar-shrink");
+        }
         }
     };
     // Collapse now if page is not at top

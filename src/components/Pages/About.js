@@ -41,12 +41,11 @@ class About extends Component {
                 <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
             </div>
             <ul className="timeline">
-               
-                 {about.map((item, index) => {
-                     return <Timeline {...item} key="index" />
+                {about.map((item, index) => {
+                     return <Timeline {...item} key={index} />
                  })}
-                <li class="timeline-inverted">
-                        <div class="timeline-image">
+                <li className="timeline-inverted">
+                        <div className="timeline-image">
                             <h4>
                                 Be Part
                                 <br />
